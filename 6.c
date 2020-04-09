@@ -38,14 +38,14 @@ int main()
     printf("Enter the array:");
     for(int i=0;i<n;i++)
         scanf("%d",&a[i]);
-    printf("\nEnter the value of k:");
-    scanf("%d",&k);
     int choice;
     char ch='y';
     while(ch=='y')
     {
         printf("\n1.Right rotation\n2.Left Rotation\nChoice=");
         scanf("%d",&choice);
+        printf("\nEnter the value of k:");
+        scanf("%d",&k);
         switch(choice)
         {
             case 1:

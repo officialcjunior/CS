@@ -82,6 +82,7 @@ int main()
 	if(k>n){
 		printf("k should be less than n.\n");
 		printf("Exiting.....\n");
+		exit(0);
 	}
 
 	else if(k == n){

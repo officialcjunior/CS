@@ -1,2 +1,17 @@
-# Ass1
-This repository hosts the code for the Ass 1- 1D array and Homework of the Computer Programming undergrad course.
+# Computer Science and Engineering - Semester Two
+
+This repository hosts the code written in the semester two of Computer Science and Engineering.
+
+## Layout
+
+```
+├── Computer-Programming
+|   ├── Assignment-1
+|   └── Home-work-1
+|   └── String-Tasks
+|
+├── Data-Structures
+|   └── Programming-Assignment-1
+|
+└── README.md
+

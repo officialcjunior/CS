@@ -5,20 +5,21 @@
 
 //For each row i, j will go through each element of the row and $sum will have the sum 
 
-void sum_of_row(int matrix[][10], int r, int c)
+void sum_of_row(int a[][10], int n, int m) //Function to find the maximum row sum
 {
-
-	int sum;
-
-	for (int i=0;i<r;i++)
+	int sum=0,i,j,max=0;
+	for (i=0;i<n;i++)
 	{	
 		sum=0;
-		for (int j=0;j<c;j++)
+		for (j=0;j<m;j++)
 		{
-			sum += matrix[i][j];
+			sum+=a[i][j]; //Finding the sum of each row
 		}
-		printf("Sum of %d-th row %d \n",i+1, sum);
+	
+		if(max<sum)  //Finding the maximum among the sums
+			max=sum;
 	}
+	printf("Maximum sum of the row=%d \n",sum);
 }
 
 int main ()

@@ -19,6 +19,7 @@ void anti_diagonal_elements(int matrix[][10], int r, int c)
 				max=sum;
 		}
 	}
+	printf("Sum of the anti-diagonal=%d and the max element in the anti-diagonal=%d",sum,max); 
 	
 
 }

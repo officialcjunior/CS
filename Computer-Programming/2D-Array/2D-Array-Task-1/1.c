@@ -1,42 +1,38 @@
-//Program to find the transpose of a matrix
-
-#include <stdio.h>
-
-int main ()
+#include<stdio.h>
+void transpose(int a[][10],int n,int m)
+{
+	int b[10][10];
+	int i=0,j=0,temp=0;
+	for(i=0;i<n;i++)
 	{
-
-		int n;
-		puts("Enter the order of the matrix");	
-		scanf("%d", &n);
-		int matrix[n][n],transpose[n][n];
-		puts("Enter the matrix elements");
-
-		//Assigning elements to the matrix
-		
-		for (int i=0;i<n;i++)
-		{	
-			for (int j=0;j<n;j++)
-				scanf("%d", &matrix[i][j]);
+		for(j=0;j<m;j++)
+		{
+			b[j][i]=a[i][j];
 		}
-
-		//Assigning the transpose to another two-dimensional array named transpose
-
-		for (int i=0;i<n;i++)
-		{	
-			for (int j=0;j<n;j++)
-				transpose[i][j]=matrix[j][i];
-		}
-
-		puts("The transpose is :");
-		
-		//Printing the transpose to STDOUT
-
-		for (int i=0;i<n;i++)
-		{	
-			for (int j=0;j<n;j++)
-				printf("%d ", transpose[i][j]);
-			puts("");
-		}
-		return 0;	
-		
 	}
+	printf("\nArray after transpose:\n");
+	for(i=0;i<n;i++)
+	{
+		for(j=0;j<m;j++)
+		{
+			printf("%d ",b[i][j]);
+		}
+		printf("\n");
+	}
+}
+int main()
+{
+	int i,j,n,m,a[10][10];
+	printf("Enter the no of rows and columns:");
+	scanf("%d%d",&n,&m);
+	printf("\nEnter the elements:");
+	for(i=0;i<n;i++)
+	{
+		for(j=0;j<m;j++)
+		{
+			scanf("%d",&a[i][j]);
+		}
+	}
+	transpose(a,n,m);
+	
+}

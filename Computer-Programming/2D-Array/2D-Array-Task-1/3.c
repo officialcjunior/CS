@@ -4,9 +4,9 @@
 
 //Computes the sum of anti diagonal elements and assigns it to the variable sum
 
-int anti_diagonal_elements(int matrix[][10], int r, int c)
+void anti_diagonal_elements(int matrix[][10], int r, int c)
 {
-	int sum=0;
+	int max=0,sum=0;
 	for (int i = 0; i < r; ++i)
 	{
 		for (int j = 0; j < c; ++j)
@@ -15,9 +15,11 @@ int anti_diagonal_elements(int matrix[][10], int r, int c)
 			{
 				sum+=matrix[i][j];
 			}
+			if(max<sum)
+				max=sum;
 		}
 	}
-	return sum;
+	
 
 }
 

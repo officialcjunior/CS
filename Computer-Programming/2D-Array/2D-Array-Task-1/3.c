@@ -11,12 +11,14 @@ void anti_diagonal_elements(int a[][10], int r, int c)
 	{
 		for(j=0;j<c;j++)
 		{
-			if((i+j)==(r-1))
+			if ((i+j)==(r-1))
 			{
-				sum+=matrix[i][j];
+				sum+=a[i][j];
 			}
-			if(max<matrix[i][j] && (i+j)==(r-1))
-			max=a[i][j];
+			if (max<a[i][j] && (i+j)==(r-1))
+			{	
+				max=a[i][j];
+			}
 		}
 	}
 	printf("Sum of Anti-Diagonal=%d\nMax Anti-Diagonal Element=%d",sum,max);

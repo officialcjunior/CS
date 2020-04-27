@@ -1,31 +1,45 @@
+//Prints the sum of anti diagonal elements of a matrix
+
 #include<stdio.h>
 
-int main()
-{
-	int n,sum=0;
-	printf("Enter the number of rows and columns(Enter one number as it should be a square matrix)\n");
-	scanf("%d",&n);
-	int arr[n][n];
-	printf("Enter the array\n");
-	for (int i = 0; i < n; ++i)
-	{
-		for (int j = 0; j < n; ++j)
-		{
-			scanf("%d",&arr[i][j]);
-		}
-	}
+//Computes the sum of anti diagonal elements and assigns it to the variable sum
 
-	for (int i = 0; i < n; ++i)
+int anti_diagonal_elements(int matrix[][10], int r, int c)
+{
+	int sum=0;
+	for (int i = 0; i < r; ++i)
 	{
-		for (int j = 0; j < n; ++j)
+		for (int j = 0; j < c; ++j)
 		{
-			if((i+j)==(n-1))
+			if((i+j)==(r-1))
 			{
-				sum+=arr[i][j];
+				sum+=matrix[i][j];
 			}
 		}
 	}
+	return sum;
 
-	printf("The sum of the anti diagonal elements is: %d\n",sum);
+}
+
+int main()
+{
+	int n,r,c,matrix[10][10];
+	printf("Enter the number of rows and columns(Enter an equal number for both rows and columns as it should be a square matrix)\n");
+	scanf("%d %d",&r,&c);
+
+	//Assigning elements to the matrix
+
+	printf("Enter the matrix elements\n");
+	for (int i = 0; i < r; ++i)
+	{
+		for (int j = 0; j < c; ++j)
+		{
+			scanf("%d",&matrix[i][j]);
+		}
+	}
+
+	//Calls anti_diagonal_elements() and prints out the return value, which is the sum
+
+	printf("The sum of the anti diagonal elements is: %d\n",anti_diagonal_elements(matrix,r,c));
 }
 	

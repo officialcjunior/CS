@@ -42,6 +42,6 @@ int main()
 
 	//Calls anti_diagonal_elements() and prints out the return value, which is the sum
 
-	printf("The sum of the anti diagonal elements is: %d\n",anti_diagonal_elements(matrix,r,c));
+	anti_diagonal_elements(matrix,r,c);
 }
 	

@@ -20,9 +20,9 @@ void transpose(int a[][10],int n,int m)
 	//Printing the transpose to STDOUT
 
 	printf("\nArray after transpose:\n");
-	for(i=0;i<n;i++)
+	for(i=0;i<m;i++)
 	{
-		for(j=0;j<m;j++)
+		for(j=0;j<n;j++)
 		{
 			printf("%d ",b[i][j]);
 		}

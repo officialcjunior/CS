@@ -4,23 +4,22 @@
 
 //Computes the sum of anti diagonal elements and assigns it to the variable sum
 
-void anti_diagonal_elements(int matrix[][10], int r, int c)
+void anti_diagonal_elements(int a[][10], int n, int m)
 {
-	int max=0,sum=0;
-	for (int i = 0; i < r; ++i)
+	int sum=0,i,j,max=0;
+	for (i = 0;i<n;i++)
 	{
-		for (int j = 0; j < c; ++j)
+		for(j=0;j<m;j++)
 		{
-			if((i+j)==(r-1))
+			if((i+j)==(n-1))
 			{
 				sum+=matrix[i][j];
 			}
-			if(max<sum)
-				max=sum;
+			if(max<matrix[i][j] && (i+j)==(n-1))
+			max=a[i][j];
 		}
 	}
-	printf("Sum of the anti-diagonal=%d and the max element in the anti-diagonal=%d",sum,max); 
-	
+	printf("Sum of Anti-Diagonal=%d\nMax Anti-Diagonal Element=%d",sum,max);
 
 }
 

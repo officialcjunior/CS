@@ -97,9 +97,9 @@ int main()
 		}
 	
 	printf("Array before changing the anti diagonal:\n");
-	for(i=0;i<n;i++)
+	for(i=1;i<n-1;i++)
 	{
-		for(j=0;j<m;j++)
+		for(j=1;j<m-1;j++)
 		{
 			printf("%d ",a[i][j]);
 		}

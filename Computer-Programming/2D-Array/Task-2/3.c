@@ -49,6 +49,6 @@ int main()
      }
    }
    //Calls antidiagonal_sort() and prints out the matrix after sorting the antidiagonal elements
-   antidiagonal_sort(mat,row,row);
+   antidiagonal_sort(mat,row,column);
    return 0;
 }

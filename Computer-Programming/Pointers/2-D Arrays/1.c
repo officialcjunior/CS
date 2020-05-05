@@ -6,7 +6,7 @@ void MatADD(int n,int m,int a[n][m],int b[n][m])
 	{
 		for(j=0;j<m;j++)
 		{
-			c[i][j]=*(*(a+i)+j)+*(*(b+i)+j);
+			*(*(c+i)+j)=*(*(a+i)+j)+*(*(b+i)+j);
 		}
 	}
 	printf("\nResultant Matrix:\n");
@@ -14,7 +14,7 @@ void MatADD(int n,int m,int a[n][m],int b[n][m])
 	{
 		for(j=0;j<m;j++)
 		{
-			printf("%d ",c[i][j]);
+			printf("%d ",*(*(c+i)+j));
 		}
 		printf("\n");
 	}
@@ -30,7 +30,7 @@ int main()
 	{
 		for(j=0;j<m;j++)
 		{
-			scanf("%d",&a[i][j]);
+			scanf("%d",*(a+i)+j);
 		}
 	}
 	printf("Enter the value for matrix b:\n");
@@ -38,7 +38,7 @@ int main()
 	{
 		for(j=0;j<m;j++)
 		{
-			scanf("%d",&b[i][j]);
+			scanf("%d",*(b+i)+j);
 		}
 	}
 	MatADD(n,m,a,b);

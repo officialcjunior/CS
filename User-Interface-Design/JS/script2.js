@@ -5,8 +5,8 @@ function dateAndTime() {
   var date = "Date: ";
   if (today.getDate() < 10) date += "0" + today.getDate();
   else date += today.getDate();
-  if (today.getMonth() + 1 < 10) date += "/0" + today.getMonth();
-  else date += "/" + today.getMonth();
+  if (today.getMonth() + 1 < 10) date += "/0" + (today.getMonth()+1);
+  else date += "/" + (today.getMonth()+1);
   date += "/" + today.getFullYear();
   var time = "Time: ";
   if (today.getHours() < 10) time += "0" + today.getHours();

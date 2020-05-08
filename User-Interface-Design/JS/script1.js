@@ -15,7 +15,7 @@ function stringGenaerator(date) {
   var day = date.substring(8); //Taking the day from the input string date
   var str = dayGenerator(day) + " " + monthGenerator(month); // Adding the string form of day and month to the output string
   if (year > 2000)
-    str += " two thousand" + tenGenerator("0" + year.substring(2));
+    str += " two thousand" + tenGenerator(year.substring(2));
   else if (year == 2000) str += " two thousand";
   else if (year == 1900) str += " ninteen thousand";
   else if (year < 1921)

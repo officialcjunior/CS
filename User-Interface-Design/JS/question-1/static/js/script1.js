@@ -5,11 +5,11 @@ function dateToString() {
     " ,this is your date in words "; //For storing the entered name in the form
   var date1 = document.getElementById("myForm").elements[1].value; //For storing the entered date in the form
   document.getElementById("Form").remove(); //Removing the form to display the output
-  date = stringGenaerator(date1); //Passing the date to the stringGenerator()
+  date = stringGenerator(date1); //Passing the date to the stringGenerator()
   document.getElementById("outputName").innerHTML = name; //This will insert the output form of the name to the html in the id named "outputName"
   document.getElementById("output").innerHTML = date; //This will insert the output date to the html in the id name "output"
 }
-function stringGenaerator(date) {
+function stringGenerator(date) {
   var year = date.substring(0, 4); //Taking the year from the input string date
   var month = date.substring(5, 7); //Taking the month from the input string date
   var day = date.substring(8); //Taking the day from the input string date
@@ -48,7 +48,7 @@ function dayGenerator(day) {
     "17": " Seventeenth",
     "18": " Eighteenth",
     "19": " Nineteenth",
-    "20": " Twenthy",
+    "20": " Twenty",
     "21": " Twenty first",
     "22": " Twenty second",
     "23": " Twenty third",

@@ -18,3 +18,4 @@ function dateAndTime() {
   document.getElementById("date").innerHTML = date;
   document.getElementById("time").innerHTML = time; //This helps to insert the date and time in the id location 'datetime' in the html page
 }
+dateAndTime();

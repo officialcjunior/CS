@@ -7,7 +7,7 @@ int main()
   fl=&f;            //To store address of the floating point variable
   ch=&c;            //To store the address of charcater variable
   du=&d;            //To store the address of the double variable
-  printf("Flaot %f\n",(*fl));
+  printf("Float %f\n",(*fl));
   printf("Character %c\n",(*ch));
   printf("Double %lf\n",(*du));
   return 0;

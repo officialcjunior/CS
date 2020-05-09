@@ -58,12 +58,13 @@ function Validatename(x)
  }
  function ValidateASD(x,y,z)
  {
+     var def="Default";
      if(x.value.length==0)
      {
         alert("Message:Address field is blank");
         return false;
      }
-     else if(y.value.length==0)
+     else if(y.value.length==0 || y.value.match(def))
      {
         alert("Message:City field is blank");
         return false;

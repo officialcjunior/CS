@@ -1,0 +1,19 @@
+a) pointer+pointer :INVALID
+
+b) integer+pointer:VALID
+
+c) pointer+interger:VALID
+
+d) pointer-integer:VALID
+
+e) integer-pointer:INVALID
+
+f) pointer-pointer :VALID 
+
+g) compare pointer to pointer :VALID
+
+h) compare pointer to integer:INVALID
+
+i) compare pointer 0:VALID
+
+j) compare pointer to NULL:VALID

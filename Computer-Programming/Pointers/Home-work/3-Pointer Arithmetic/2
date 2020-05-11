@@ -1,0 +1,8 @@
+If p is the the pointer to the first element of an array,then
+
+-->	When x=*p++ is performed,the address to which pointer is pointing to gets incremented to the next and gets stored in x.
+(i.e) initially *p points towards arr[0] ,x gets the address of arr[0].But when *p++ is performed ,the pointer now points toward arr[1] and x gets address of arr[1] stored in it.
+
+
+-->	When x=(*p)++ is performed the value inside pointer gets incremented and gets stored in x and not the address.
+(i.e) if initially arr[0]=1,the on performing  x=(*p)++ the value of arr[0]=1 and the value gets stored in x.

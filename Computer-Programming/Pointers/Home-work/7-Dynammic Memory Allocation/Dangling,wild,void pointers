@@ -1,0 +1,5 @@
+Void pointer:Void pointer is used as a generic pointer to hold addresses. Any pointer must be converted to void pointer if you want to print it using printf. 
+
+Null pointer:Null pointer can be of any type but by definition it points to nothing.In contrast to void pointer, null pointer is a value.
+
+Dangling pointers:Dangling pointers arise when an object is deleted or de-allocated, without modifying the value of the pointer, so that the pointer still points to the memory location of the de-allocated memory.

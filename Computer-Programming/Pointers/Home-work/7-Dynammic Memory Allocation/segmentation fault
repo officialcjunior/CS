@@ -1,0 +1,1 @@
+Segmentation fault is an error caused by accessing memory that does not belong to you.It is raised by hardware with memory protection, notifying an operating system the software has attempted to access a restricted area of memory. 

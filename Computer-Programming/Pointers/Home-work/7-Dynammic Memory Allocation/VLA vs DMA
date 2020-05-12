@@ -1,0 +1,5 @@
+The major difference in VLA and Dynamic memory allocation is:
+--> VLA is usually performed on stck,whereas DMA is on heap.
+--> VLA has ficed size once its size is allocated ,while DMA can resized.
+--> VLA is allocated when the enclosing function is called whereas DMA  is allocated memory dynamically, at runtime and the returned memory has a lifetime which extends from the allocation until the deallocation.
+--> In VLA allocated memory will be automatically managed whereas in DMA memory should be free().

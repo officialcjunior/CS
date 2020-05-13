@@ -5,7 +5,7 @@
 int **allocate(int r, int c)
 {
 	int **p;
-	int i,j;
+	int i;
 
 	p=(int**)malloc(r*sizeof(int*));
 

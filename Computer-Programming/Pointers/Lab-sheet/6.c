@@ -44,8 +44,8 @@ int main ()
 	for (j=0;j<3;j++)
 	{
 		sum += pow(matrix[choice2][j]-matrix[choice1][j],2);
-		distance = sqrt (sum);
 	}
+	distance = sqrt (sum);
 	printf("Distance : %f\n",distance);
 	return 0;
 }

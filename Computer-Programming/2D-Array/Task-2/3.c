@@ -1,4 +1,3 @@
-//T R Hari Subramaniam CSE-A AM.EN.U4CSE19056
 #include<stdio.h>
 void antidiagonal_sort(int mat[][10], int row, int column)
 {

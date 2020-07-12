@@ -1,4 +1,4 @@
-# Files- Lab Assignment
+# CLI-Macros-enum-union 
 
 1. Write a C Program to find the sum of digits of a number, using command line arguments.
 2. Write a C Program to find whether the strings passed as command line arguments, are

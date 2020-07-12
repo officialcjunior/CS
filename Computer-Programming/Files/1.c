@@ -27,4 +27,5 @@ int main () {
 		}
 	}
 	while (choice!=2);
+	fclose(fp);
 }

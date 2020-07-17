@@ -20,7 +20,7 @@ int main()
 				c2++;
 			ch=fgetc(f);
 		}
-		printf("\nNo of words=%d\nNo of characters=%d\n",c1,c2-1);
+		printf("\nNo of words=%d\nNo of characters=%d\n",c1,c2);
 		}
 		fclose(f);
 	return 0;

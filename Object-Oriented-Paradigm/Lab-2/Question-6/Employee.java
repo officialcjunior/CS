@@ -1,25 +1,30 @@
-package lab2;
+package Sixth;
 
 public class Employee {
-	long id;
-	String name;
-	double salary;
-	Employee () {
+	private long id;
+	private String name;
+	private double salary;
+	Employee()
+	{
+		id=0;
 		name="";
 		salary=0;
 	}
-	Employee (String nam, double sal)  {
-		name = nam;
-		salary = sal;
+	Employee(String n,double s)
+	{
+		name=n;
+		salary=s;
 	}
-	public String getname () {
+	public String getName()
+	{
 		return name;
 	}
-	public Double getsalary () {
+	public double getSalary()
+	{
 		return salary;
 	}
-	void raiseSalary (double byPercent ) {
-		salary += salary * 10 / 100;
+	public void raiseSalary(double n)
+	{
+		System.out.println("Salary after increasing is "+(salary*(n/100)+salary));
 	}
-	
 }

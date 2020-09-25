@@ -1,32 +1,20 @@
-package lab2;
-import java.util.Scanner;
+package Default;
 
 public class Box {
 	
-	Scanner obj = new Scanner(System.in);
-	private double width;
-	public double height;
-	public double depth;
-	
-	Box(){
-		width = 12;
-		height = 27;
-		depth = 34;
-	}
-	
-	double volume() {
+		private double width;
+		public double height;
+		public double depth;
+
+
+	public double volume() //Method for computing Volume
+	{
 		return(width*height*depth);
 	}
-	
-	void setDimension(double w,double h, double d) {
-		width = w;
-		height = h;
-		depth = d;
+
+	public void getwidth(int w)
+	{
+		width=w;
 	}
-	
-	double getWidth() {
-		System.out.print("Enter the width: ");
-		width = obj.nextDouble();
-		return(width);
-	}
+
 }

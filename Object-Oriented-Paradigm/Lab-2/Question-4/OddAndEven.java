@@ -1,22 +1,16 @@
+package Fourth;
 
-public class OddAndEven {
-	int countofOdd,countofEven;
-	
-	public void addNumber(int n) {
-		if(n%2!=0) {
-			countofOdd += 1;
-		}
-		else {
-			countofEven += 1;
-		}
+class OddAndEven {
+	public int countOfOdd,countOfEven;
+	public void addNumber(int n)
+	{
+		if(n%2==1)
+			countOfOdd++;
+		else
+			countOfEven++;
 	}
-	
-	public String toString() {
-		String str = "";
-		str += "Number of Odd: ";
-		str += countofOdd;
-		str += "\nNumber of Even: ";
-		str += countofEven;
-		return str;
+	public String toString()
+	{
+		return ("Number of Odd:"+ countOfOdd+", Number ofEven: "+countOfEven);
 	}
 }
